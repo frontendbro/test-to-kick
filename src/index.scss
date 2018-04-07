@@ -1,15 +1,54 @@
 $black: #000;
+$white: #fff;
+$blue: #009ad6;
+$bg: #f9fbfd;
+$text1: #3b3f4a;
+$text2: #8b98ab;
 
-.grey {
-	.text {
-		color: grey;
-	}
+
+html, body {
+	font-family: "Open Sans", sans-serif;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: $bg;
 }
 
-.bg {
-	background-color: $black;
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 22px 113px;
+	box-shadow: 0 9px 0 #cfdeea;
+	align-items: center;
+	z-index: 2;
+	background-color: $white;
 }
 
-.class1, .class2 {
-	color:red;
+.menu {
+	display: flex;
+	flex-grow: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-item {
+
+}
+
+.content {
+	min-height: 350px;
+	background: url("../public/images/illustration.png") no-repeat 100% -74px;
+	padding-top: 200px;
+	padding-left: 200px;
+	z-index: 1;
+}
+
+h2 {
+	font-size: 36px;
+	margin: 0;
+}
+
+.slider {
+
 }

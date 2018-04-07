@@ -3,8 +3,7 @@ import { hot } from 'react-hot-loader';
 
 import Header from './components/Header';
 import Content from './components/Content';
-import Filter from './components/Filter';
-import Footer from './components/Footer';
+import Slider from './components/Slider';
 
 
 class App extends Component {
@@ -13,8 +12,7 @@ class App extends Component {
 			<div className="wrapper">
 				<Header />
 				<Content />
-				<Filter />
-				<Footer />
+				<Slider />
 			</div>
 		);
 	}
