@@ -9,7 +9,7 @@ import Slider from './components/Slider';
 class App extends Component {
 	render() {
 		return (
-			<div className="wrapper">
+			<div className="main">
 				<Header />
 				<Content />
 				<Slider />
