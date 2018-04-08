@@ -13,7 +13,9 @@ class component extends Component {
 						<img src={logo} alt='logo' width='121' height='31'/>
 					</div>
 					<Menu />
-					<a href="#">Create event</a>
+					<div className='event-create'>
+						<p className='event-create__button'>Create event</p>
+					</div>
 					<div className='user-info'>
 						<span className='score'>0.0027 KCY</span>
 						<img className='user-info__avatar' src={user} alt='user' width='42' height='42'/>

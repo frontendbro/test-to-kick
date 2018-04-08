@@ -14,8 +14,8 @@ class component extends Component {
 						<li className='menu-list__item menu-list__item_active'>Explore</li>
 					</ul>
 					<div className='menu-search'>
-						<img className='menu-search__search-icon' src={search} alt="search" width="16" height="16"/>
-						<img src={alarm} alt="search" width="18" height="18"/>
+						<img className='menu-search__search-icon' src={search} alt='search' width='16' height='16'/>
+						<img src={alarm} alt='search' width='18' height='18'/>
 					</div>
 				</div>
 		);

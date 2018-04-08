@@ -67,9 +67,22 @@ html, body {
 	margin-right: 30px;
 }
 
+.event-create {
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid $border;
+	padding: 0 32px;
+}
+
+.event-create__button {
+	margin: 0;
+	flex-grow: 1;
+}
+
 .user-info {
 	display: flex;
 	align-items: center;
+	padding-left: 20px;
 }
 
 .user-info__avatar {
@@ -112,6 +125,45 @@ h2 {
 	margin: 0;
 }
 
+/*Slider - start*/
 .slider {
-
+	padding: 80px 80px 100px 80px;
 }
+
+.slider-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+h3 {
+	margin: 0;
+}
+
+.slider-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.event-card {
+	width: 308px;
+	height: 267px;
+	flex-shrink: 0;
+	color: $white;
+	&_long{
+		width: 632px;
+	}
+}
+
+.card1 {
+	background-image: url("../public/images/card1.png");
+}
+
+.card2 {
+	background-image: url("../public/images/card2.png");
+}
+
+.card3 {
+	background-image: url("../public/images/card3.png");
+}
+/*Slider - end*/

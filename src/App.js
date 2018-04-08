@@ -6,6 +6,8 @@ import Content from './components/Content';
 import Slider from './components/Slider';
 
 
+
+
 class App extends Component {
 	render() {
 		return (

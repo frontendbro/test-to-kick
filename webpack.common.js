@@ -24,7 +24,7 @@ module.exports = {
 						options: {
 							useRelativePath: true,
 							publicPath: 'public/images/',
-							outputPath: 'images/'
+							outputPath: '/'
 						}
 					}
 				]
