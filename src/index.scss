@@ -7,210 +7,238 @@ $text2: #8b98ab;
 $border: #d8e6f1;
 $shadow: #cfdeea;
 
-
 html, body {
-	font-family: "Open Sans", sans-serif;
-	height: 100%;
-	min-width: 1024px;
-	padding: 0;
-	margin: 0;
-	background-color: $bg;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  min-width: 1024px;
+  padding: 0;
+  margin: 0;
+  background-color: $bg;
 }
 
 /*Header - start*/
 .header {
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 80px;
-	box-shadow: 0 0 9px $shadow;
-	align-items: center;
-	z-index: 1;
-	background-color: $white;
-	height: 64px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  box-shadow: 0 0 9px $shadow;
+  align-items: center;
+  z-index: 1;
+  background-color: $white;
+  height: 64px;
 }
 
 .header__logo {
-	padding-right: 40px;
+  padding-right: 40px;
 }
 
 .menu {
-	display: flex;
-	height: 100%;
-	flex-grow: 1;
-	align-items: center;
-	padding: 0 30px 0 50px;
-	border-right: 1px solid $border;
-	border-left: 1px solid $border;
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  align-items: center;
+  padding: 0 30px 0 50px;
+  border-right: 1px solid $border;
+  border-left: 1px solid $border;
 }
 
 .menu-list {
-	display: flex;
-	height: 100%;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-list__item {
-	display: flex;
-	align-items: center;
-	margin-right: 50px;
-	&_active {
-		border-bottom: 2px solid $blue;
-	}
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-right: 50px;
+  &_active {
+    border-bottom: 2px solid $blue;
+  }
 }
 
-.menu-list__link{
-	cursor: pointer;
+.menu-list__link {
+  cursor: pointer;
+}
+
+.menu-list-popover {
+  position: absolute;
+  left: 0;
+  top: 64px;
+  display: none;
+  &_active {
+    display: inline-block;
+  }
+}
+
+.popover-list {
+  padding: 0;
+  list-style: none;
+  background-color: $white;
+  border: 1px solid $border;
+  min-width: 120px;
+}
+
+.popover-list__item {
+  padding: 4px 12px;
+  border-bottom: 1px solid $border;
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .menu-search {
-	display: flex;
-	justify-content: flex-end;
-	flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .menu-search__search-icon {
-	margin-right: 30px;
+  margin-right: 30px;
 }
 
 .event-create {
-	display: flex;
-	align-items: center;
-	height: 100%;
-	border-right: 1px solid $border;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-right: 1px solid $border;
 }
 
 .event-create__button {
-	display: flex;
-	align-items: center;
-	margin: 0;
-	flex-grow: 1;
-	padding: 0 32px;
-	height: 100%;
-	cursor: pointer;
-	&_active {
-		color: $white;
-		background-color: $blue;
-	}
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-grow: 1;
+  padding: 0 32px;
+  height: 100%;
+  cursor: pointer;
+  &_active {
+    color: $white;
+    background-color: $blue;
+  }
 }
 
 .user-info {
-	display: flex;
-	align-items: center;
-	padding-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .user-info__avatar {
-	margin-left: 12px;
+  margin-left: 12px;
 }
+
 /*Header - end*/
 
 .content {
-	position: relative;
-	background: url("../public/images/illustration.png") no-repeat 100% -74px;
-	padding: 0 80px;
+  position: relative;
+  background: url("../public/images/illustration.png") no-repeat 100% -74px;
+  padding: 0 80px;
 }
 
 .content-wrapper {
-	border-bottom: 1px solid $border;
+  border-bottom: 1px solid $border;
 }
 
 .content-action {
-	padding-left: 120px;
-	padding-top: 200px;
-	padding-bottom: 260px;
+  padding-left: 120px;
+  padding-top: 200px;
+  padding-bottom: 260px;
 }
 
 .content-action__button {
-	border: none;
-	background-color: $blue;
-	padding: 18px 26px;
-	border-radius: 100px;
-	color: $white;
-	font-size: 14px;
-	font-weight: normal;
-	outline: none;
-	&:hover {
-		cursor: pointer;
-	}
+  border: none;
+  background-color: $blue;
+  padding: 18px 26px;
+  border-radius: 100px;
+  color: $white;
+  font-size: 14px;
+  font-weight: normal;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 h2 {
-	font-size: 36px;
-	margin: 0;
+  font-size: 36px;
+  margin: 0;
 }
 
 /*Slider - start*/
 .slider {
-	padding: 80px 80px 100px 80px;
+  padding: 80px 80px 100px 80px;
 }
 
 .slider-header {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 h3 {
-	margin: 0;
+  margin: 0;
 }
 
 .slider-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .event-card {
-	width: 277px;
-	height: 235px;
-	flex-shrink: 0;
-	color: $white;
-	padding: 16px;
-	margin-bottom: 16px;
-	margin-right: 16px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	&_long{
-		width: 600px;
-	}
+  width: 277px;
+  height: 235px;
+  flex-shrink: 0;
+  color: $white;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &_long {
+    width: 600px;
+  }
 }
 
 .event-card__date {
-	margin: 0;
-	font-size: 12px;
+  margin: 0;
+  font-size: 12px;
 }
 
 .event-card__title {
-	margin: 0;
-	font-size: 16px;
-	font-weight: bold;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .card1 {
-	background: url("../public/images/card1.png") no-repeat;
+  background: url("../public/images/card1.png") no-repeat;
 }
 
 .card2 {
-	background: url("../public/images/card2.png") no-repeat;
+  background: url("../public/images/card2.png") no-repeat;
 }
 
 .card3 {
-	background: url("../public/images/card3.png") no-repeat;
+  background: url("../public/images/card3.png") no-repeat;
 }
 
 .card4 {
-	background: url("../public/images/card2.png") no-repeat;
+  background: url("../public/images/card2.png") no-repeat;
 }
 
 .card5 {
-	background: url("../public/images/card3.png") no-repeat;
+  background: url("../public/images/card3.png") no-repeat;
 }
 
 .card6 {
-	background: url("../public/images/card1.png") no-repeat;
+  background: url("../public/images/card1.png") no-repeat;
 }
+
 /*Slider - end*/

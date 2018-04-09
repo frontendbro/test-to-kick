@@ -6,8 +6,14 @@ import '../index.scss';
 import Menu from './Menu';
 
 class component extends Component {
-  handleEvent = () => {
-    console.log('dsdf');
+  constructor(props){
+    super(props);
+    this.handleEvent = this.handleEvent.bind(this);
+  }
+
+  handleEvent() {
+    let button = document.querySelector('.event-create__button');
+    button.classList.toggle('event-create__button_active');
   };
 
   render() {
