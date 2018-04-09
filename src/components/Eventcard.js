@@ -9,8 +9,8 @@ class component extends Component {
 	render() {
 		return (
 				<div className={`event-card ${this.props.id}`}>
-					<p>{this.props.date}</p>
-					<p>{this.props.title}</p>
+					<p className='event-card__date'>{this.props.date}</p>
+					<p className='event-card__title'>{this.props.title}</p>
 				</div>
 		);
 	}
